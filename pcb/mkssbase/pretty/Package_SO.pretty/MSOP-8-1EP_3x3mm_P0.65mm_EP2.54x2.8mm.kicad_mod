@@ -39,7 +39,7 @@
   (pad "" smd rect (at 0 0) (size 2.4 0.65) (layers F.Paste))
   (pad "" smd rect (at 0 1.025) (size 2.4 0.65) (layers F.Paste))
   (pad "" smd rect (at 0 -1.025) (size 2.4 0.65) (layers F.Paste))
-  (model ${KISYS3DMOD}/Package_SO.3dshapes/MSOP-8-1EP_3x3mm_P0.65mm_EP2.54x2.8mm.wrl
+  (model ${KICAD6_3DMODEL_DIR}/Package_SO.3dshapes/MSOP-8-1EP_3x3mm_P0.65mm_EP2.54x2.8mm.wrl
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
