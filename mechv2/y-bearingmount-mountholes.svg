@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
+   sodipodi:docname="y-bearingmount-mountholes.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="2.2501219"
+     inkscape:cx="118.88245"
+     inkscape:cy="132.21506"
+     inkscape:window-width="1600"
+     inkscape:window-height="841"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g935"
+       style="stroke-width:0.1;stroke-dasharray:none"
+       transform="translate(-51.26149,-50.724574)">
+      <rect
+         style="fill:none;stroke:#000000;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         id="rect236"
+         width="4.1999998"
+         height="5"
+         x="56.661491"
+         y="63.074574"
+         rx="2"
+         ry="2" />
+      <rect
+         style="fill:none;stroke:#000000;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         id="rect370"
+         width="9"
+         height="10"
+         x="54.26149"
+         y="60.574574"
+         rx="4.5"
+         ry="4.5" />
+    </g>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+       id="rect944"
+       width="15"
+       height="69.699997"
+       x="0"
+       y="0" />
+    <g
+       id="g1012"
+       style="stroke-width:0.1;stroke-dasharray:none"
+       transform="translate(-51.26149,-10.724574)">
+      <rect
+         style="fill:none;stroke:#000000;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         id="rect1008"
+         width="4.1999998"
+         height="5"
+         x="56.661491"
+         y="63.074574"
+         rx="2"
+         ry="2" />
+      <rect
+         style="fill:none;stroke:#000000;stroke-width:0.1;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none"
+         id="rect1010"
+         width="9"
+         height="10"
+         x="54.26149"
+         y="60.574574"
+         rx="4.5"
+         ry="4.5" />
+    </g>
+  </g>
+</svg>
