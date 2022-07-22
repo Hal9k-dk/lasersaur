@@ -13,10 +13,10 @@ SEGMENTS = 32
 
 card_pocket_w = 54
 card_pocket_h = 50
-card_pocket_d = 1.5
+card_pocket_d = 2
 
 fob_pocket_inside_dia = 35
-fob_pocket_inside_h = 7
+fob_pocket_inside_h = 6.5
 fob_pocket_inside_radius = 1
 fob_pocket_thickness = 2
 fob_pocket_displacement = 10
