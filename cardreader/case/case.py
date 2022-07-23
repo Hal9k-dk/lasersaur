@@ -23,6 +23,7 @@ coil_sup_d = 3
 # Inner diameter of coil
 coil_sup_w = 43
 coil_sup_h = 31
+e = 0.001
 
 def coil_sup():
     return cylinder(coil_sup_d/2, coil_sup_l)
@@ -52,6 +53,16 @@ def frame2():
     inner = translate([-iw/2, -ih/2, case_th])(cube([iw, ih, case_d2+1]))
     return outer-inner
 
+def frame3():
+    h = 10
+    ow = case_w-2*case_th
+    oh = case_h-2*case_th
+    outer = translate([-(ow+e)/2, -(oh+e)/2, 0])(cube([ow+e, oh+e, h]))
+    iw = ow - 4
+    ih = oh
+    inner = translate([-iw/2, -ih/2, -1])(cube([iw, ih, h+2]))
+    return outer-inner
+
 def screw_support():
     return cylinder(5, 4)
 
@@ -69,11 +80,20 @@ def switch_mount():
 def screw_hole():
     return up(case_d1 + case_d2 - 5)(left(5)(rotate([90, 0, 90])(cylinder(r=1.5, h = 10))))
 
+def front_screw_hole(invert):
+    th = 1
+    offset = 8.5-th
+    if invert:
+        offset = 6.5+th
+    return left(10)(rotate([90, 0, 90])(cylinder(d=3.2, h = 20) +
+                                        translate([0, 0, offset])(cylinder(d=4.5, h = 5))))
+
 def assembly():
     bt = bottom()
     cs = up(case_th)(forward(switch_offset/2+5)(coil_sups()))
     fr1 = frame1()
     fr2 = up(case_d1-0.1)(frame2())
+    fr3 = frame3()
 
     swm = switch_mount()
     swh = switch_hole()
@@ -81,7 +101,19 @@ def assembly():
     sh2 = translate([-case_w/2, 15, 0])(screw_hole())
     sh3 = translate([case_w/2, -15, 0])(screw_hole())
     sh4 = translate([case_w/2, 15, 0])(screw_hole())
-    return cs + fr1 + fr2 + bt + translate([0, 0, 0])(swm) - translate([0, 0, 1])(swh) - sh1 - sh2 - sh3 - sh4
+
+    # Front screw holes (for inserts)
+    fsh_x = 26
+    fsh_dist = 35
+    fsh_offset = -1
+    fsh_z = 5
+    fsh1 = translate([-fsh_x, fsh_offset - fsh_dist/2, fsh_z])(front_screw_hole(True))
+    fsh2 = translate([-fsh_x, fsh_offset + fsh_dist/2, fsh_z])(front_screw_hole(True))
+    fsh3 = translate([fsh_x, fsh_offset - fsh_dist/2, fsh_z])(front_screw_hole(False))
+    fsh4 = translate([fsh_x, fsh_offset + fsh_dist/2, fsh_z])(front_screw_hole(False))
+    fscrewholes = fsh1 + fsh2 + fsh3 + fsh4
+
+    return cs + fr1 + fr2 + fr3 + bt + translate([0, 0, 0])(swm) - translate([0, 0, 1])(swh) - sh1 - sh2 - sh3 - sh4 - fscrewholes
 
 if __name__ == '__main__':
     a = assembly()
