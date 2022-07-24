@@ -11,7 +11,7 @@ from solid.utils import *
 
 SEGMENTS = 16
 
-case_w = 59
+case_w = 59-0.5
 case_h = 53
 case_w2 = case_w + 6
 case_h2 = case_h + 6
@@ -70,7 +70,7 @@ switch_offset = -22
 
 def switch_hole():
     flap_hole = cube([5, 18, 5])
-    sw_w = 6.25
+    sw_w = 6.35
     return translate([-sw_w/2, switch_offset, -0.5])(cube([sw_w, 24, 10]) +
                                     translate([.5, 3, -4.5])(flap_hole))
 
@@ -86,7 +86,7 @@ def front_screw_hole(invert):
     if invert:
         offset = 6.5+th
     return left(10)(rotate([90, 0, 90])(cylinder(d=3.2, h = 20) +
-                                        translate([0, 0, offset])(cylinder(d=4.5, h = 5))))
+                                        translate([0, 0, offset])(cylinder(d=4.9, h = 5))))
 
 def assembly():
     bt = bottom()
@@ -105,7 +105,7 @@ def assembly():
     # Front screw holes (for inserts)
     fsh_x = 26
     fsh_dist = 35
-    fsh_offset = -1
+    fsh_offset = -0.5
     fsh_z = 5
     fsh1 = translate([-fsh_x, fsh_offset - fsh_dist/2, fsh_z])(front_screw_hole(True))
     fsh2 = translate([-fsh_x, fsh_offset + fsh_dist/2, fsh_z])(front_screw_hole(True))
