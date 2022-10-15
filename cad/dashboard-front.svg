@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14, custom)"
+   sodipodi:docname="dashboard-front.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.6380299"
+     inkscape:cx="274.06816"
+     inkscape:cy="183.47025"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="2560"
+     inkscape:window-height="1389"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:showpageshadow="2"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.126517;stroke-opacity:1"
+       id="rect4133"
+       width="145"
+       height="100"
+       x="-4.8406982e-08"
+       y="-5.5664066e-07" />
+    <g
+       id="g4232"
+       transform="translate(0,17.499997)">
+      <g
+         id="g1631"
+         transform="translate(54.620741,-227.147)">
+        <rect
+           style="fill:none;stroke:#000000;stroke-width:1.13334"
+           id="rect899"
+           width="36"
+           height="45"
+           x="23.898333"
+           y="237.147"
+           ry="0" />
+        <rect
+           style="fill:none;stroke:#fd0000;stroke-width:1.29037;stroke-opacity:1"
+           id="rect1627"
+           width="42"
+           height="50"
+           x="20.898333"
+           y="234.647"
+           ry="0" />
+      </g>
+      <g
+         id="g1646"
+         transform="translate(39.506274,-222.147)">
+        <rect
+           style="fill:none;stroke:#000000;stroke-width:0.509769"
+           id="rect789"
+           width="9.5"
+           height="34.5"
+           x="87.147995"
+           y="237.397"
+           ry="0" />
+        <rect
+           style="fill:none;stroke:#fd0000;stroke-width:0.689724;stroke-opacity:1"
+           id="rect1642"
+           width="15"
+           height="40"
+           x="84.397995"
+           y="234.647"
+           ry="0" />
+      </g>
+      <g
+         id="g4113"
+         transform="translate(-3.3562284,-180.06)">
+        <rect
+           style="fill:none;stroke:#fd0000;stroke-width:0.53332;stroke-opacity:1"
+           id="rect1711"
+           width="63"
+           height="55"
+           x="9.4519596"
+           y="185.06" />
+        <g
+           id="g4105"
+           transform="translate(-86.012732,-1.5875)">
+          <circle
+             style="fill:none;stroke:#000000;stroke-width:0.241093;stroke-opacity:1"
+             id="path1765"
+             cx="126.96469"
+             cy="217.04099"
+             r="24" />
+          <g
+             id="g4034"
+             transform="translate(-0.53530884,27.912002)">
+            <circle
+               style="fill:none;stroke:#000000;stroke-width:0.0825002;stroke-opacity:1"
+               id="path3287"
+               cx="101.5"
+               cy="202.629"
+               r="1.5" />
+            <circle
+               style="fill:none;stroke:#000000;stroke-width:0.0825002;stroke-opacity:1"
+               id="circle3289"
+               cx="153.5"
+               cy="202.629"
+               r="1.5" />
+          </g>
+        </g>
+      </g>
+      <rect
+         style="fill:none;stroke:#fe0000;stroke-width:0.121567;stroke-opacity:1"
+         id="rect4188"
+         width="35"
+         height="90"
+         x="79.019073"
+         y="-12.499997" />
+    </g>
+  </g>
+</svg>
