@@ -2,7 +2,7 @@ import cadquery as cq
 import math
 
 # shell thickness
-th = 6
+th = 3
 # shell fillet radius
 fillet_r = 5
 
@@ -12,13 +12,13 @@ mount_h = 12
 
 front_width = 145
 front_height = 100
-front_y_offset = 20 + mount_h/2
+front_y_offset = 23 + mount_h/2
 front_depth = 5
 
-bot_depth = 85
-top_depth = 55
-edge = 3
-height = front_height + edge
+bot_depth = 90
+top_depth = 60
+edge = 2
+height = front_height + 5
 width = front_width + 2*edge
 
 # make shell
@@ -64,22 +64,37 @@ angle = math.degrees(math.atan(height/(bot_depth-top_depth)))
  .tag("front")
 )
 
-# lip for front plate
+# lip for carrying front plate
 result = (result
           .workplaneFromTagged("front")
-          .transformed(offset=(front_y_offset, 0, -front_depth))
+          .transformed(offset=(front_y_offset, 0, -2))
+          .rect(height - th, width-th)
+          .extrude(10-5)
+          )
+
+# hole for front plate
+result = (result
+          .workplaneFromTagged("front")
+          .transformed(offset=(front_y_offset, 0, 10))
           .rect(front_height, front_width)
-          .cutBlind(50)
+          .cutBlind(-5-3)
           )
 
 # hole behind front plate
 result = (result
           .workplaneFromTagged("front")
-          .transformed(offset=(front_y_offset, 0, -2*th))
-          .rect(front_height - edge, front_width - edge)
+          .transformed(offset=(front_y_offset, 0, -10))
+          .rect(front_height - 2*th, front_width - 2*th)
           .cutBlind(50)
           )
 
+# counter dummy
+#result = (result
+#          .workplaneFromTagged("front")
+#          .transformed(offset=(25, 0, -4))
+#          .rect(90, 37)
+#          .extrude(-50)
+#          )
 
 # for debugging
 #result = result.workplaneFromTagged("front").box(50, 50, 10, centered=centerXY)
