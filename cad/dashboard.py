@@ -44,6 +44,7 @@ result = (cq.Workplane("XZ")
 mount_th = 5
 mount_w = width - th
 mount_d = bot_depth - th
+log('mount: %d x %d' % (mount_w, mount_d))
 mount = (cq.Workplane("XY")
          .transformed(offset=(th/2, -width+(width-mount_w)/2, -(mount_h-th)))
          .box(mount_d, mount_w, mount_h, centered=False)
