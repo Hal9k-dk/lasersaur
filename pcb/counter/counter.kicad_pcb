@@ -5,6 +5,10 @@
   )
 
   (paper "A4")
+  (title_block
+    (comment 4 "AISLER Project ID: SVPGSVLX")
+  )
+
   (layers
     (0 "F.Cu" signal)
     (31 "B.Cu" signal)
@@ -29,8 +33,7 @@
   )
 
   (setup
-    (pad_to_mask_clearance 0.051)
-    (solder_mask_min_width 0.25)
+    (pad_to_mask_clearance 0)
     (pcbplotparams
       (layerselection 0x00030fc_ffffffff)
       (disableapertmacros false)
@@ -163,9 +166,9 @@
     (fp_line (start -3.65 -1.15) (end -3.65 2.15) (layer "F.Fab") (width 0.1) (tstamp aa65865d-eee6-4104-a591-afba7aa09fb1))
     (fp_line (start -2.65 -2.15) (end -3.65 -1.15) (layer "F.Fab") (width 0.1) (tstamp aa71e54b-663f-4599-b82d-c1dde9781e3b))
     (fp_line (start -3.65 2.15) (end 3.65 2.15) (layer "F.Fab") (width 0.1) (tstamp da32a1c3-5356-4389-960e-9b15b7f822a0))
-    (pad "1" smd roundrect (at -3.1125 0) (size 2.075 2.55) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.120482)
+    (pad "1" smd roundrect (at -3.1125 0) (size 2.075 2.55) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.1204819277)
       (net 3 "+5V") (pintype "passive") (tstamp 2b3fb6cd-cd45-41a7-830f-d3388c736fc6))
-    (pad "2" smd roundrect (at 3.1125 0) (size 2.075 2.55) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.120482)
+    (pad "2" smd roundrect (at 3.1125 0) (size 2.075 2.55) (layers "F.Cu" "F.Paste" "F.Mask") (roundrect_rratio 0.1204819277)
       (net 2 "GND") (pintype "passive") (tstamp 8dfe2193-9774-44a9-8edc-7c72fcf8dd09))
     (model "${KICAD6_3DMODEL_DIR}/Capacitor_Tantalum_SMD.3dshapes/CP_EIA-7343-40_Kemet-Y.wrl"
       (offset (xyz 0 0 0))
