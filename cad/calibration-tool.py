@@ -1,4 +1,5 @@
 import cadquery as cq
+from cq_server.ui import ui, show_object
 
 w = 85
 h = 50
@@ -38,3 +39,28 @@ res = (cq.Workplane("XY")
       )
 
 show_object(res)
+
+inset = 2
+hth = 1
+holder = (cq.Workplane("XY")
+          .transformed(offset=(inset, -2*hth, 0))
+          .box(w1 - 2*inset, 2*hth, h - inset, centered=(False, False, False))
+          )
+cutout1 = (cq.Workplane("XY")
+           .transformed(offset=(inset + hth, -hth, 4*inset - hth))
+           .box(w1 - 2*inset - 2*hth, hth, h - inset - hth, centered=(False, False, False))
+          )
+#show_object(cutout1)
+cutout2 = (cq.Workplane("XY")
+           .transformed(offset=(inset + 3*hth, -2*hth, 4*inset))
+           .box(w1 - 4*inset - 2*hth, 2*hth, h, centered=(False, False, False))
+           .edges("|Y")
+           .fillet(2)
+          )
+#show_object(cutout2)
+
+holder = holder - cutout1 - cutout2
+res = res + holder
+show_object(res)
+
+cq.exporters.export(res, 'calibration-tool.stl')
