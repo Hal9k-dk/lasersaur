@@ -1,12 +1,13 @@
 import cadquery as cq
 
-w = 85
-h = 50
+w = 80
+h = 55
 d = 20
 w1 = 40
 w2 = w - w1
 h1 = 10
 th = 3
+beamhole_z = 35
 hole_inset = 15
 hole_2_inset = 50
 
@@ -26,7 +27,7 @@ res = (cq.Workplane("XY")
        .box(w1, th, h, centered=(False, False, False))
        # beam hole
        .workplaneFromTagged("bot")
-       .transformed(offset=(w1/2, 0, h/2), rotate=(90, 0, 0))
+       .transformed(offset=(w1/2, 0, beamhole_z), rotate=(90, 0, 0))
        .circle(w1*0.4)
        .cutThruAll()
        # mounting hole 1
@@ -44,8 +45,6 @@ res = (cq.Workplane("XY")
        .fillet(1)
       )
 
-show_object(res)
-
 inset = 2
 hth = 1
 paper_th = 0.5
@@ -54,12 +53,12 @@ holder = (cq.Workplane("XY")
           .box(w1 - 2*inset, 2*hth, h - inset, centered=(False, False, False))
           )
 cutout1 = (cq.Workplane("XY")
-           .transformed(offset=(inset + hth, d, 4*inset - hth))
+           .transformed(offset=(inset + hth, d, beamhole_z - w1/2 - inset))
            .box(w1 - 2*inset - 2*hth, paper_th, h - inset - hth, centered=(False, False, False))
           )
 #show_object(cutout1)
 cutout2 = (cq.Workplane("XY")
-           .transformed(offset=(inset + 3*hth, d, 4*inset))
+           .transformed(offset=(inset + 3*hth, d, beamhole_z - w1/2))
            .box(w1 - 4*inset - 2*hth, 2*hth, h, centered=(False, False, False))
            .edges("|Y")
            .fillet(2)
