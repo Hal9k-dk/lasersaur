@@ -8,6 +8,7 @@ w2 = w - w1
 h1 = 10
 th = 3
 hole_inset = 15
+hole_2_inset = 50
 
 res = (cq.Workplane("XY")
        .tag("bot")
@@ -28,9 +29,15 @@ res = (cq.Workplane("XY")
        .transformed(offset=(w1/2, 0, h/2), rotate=(90, 0, 0))
        .circle(w1*0.4)
        .cutThruAll()
-       # mounting hole
+       # mounting hole 1
        .workplaneFromTagged("bot")
        .transformed(offset=(w - hole_inset, d/2, 0))
+       .circle(5.5/2)
+       .cutThruAll()
+       .edges(">Z or |Z")
+       # mounting hole 1
+       .workplaneFromTagged("bot")
+       .transformed(offset=(w - hole_2_inset, d/2, 0))
        .circle(5.5/2)
        .cutThruAll()
        .edges(">Z or |Z")
