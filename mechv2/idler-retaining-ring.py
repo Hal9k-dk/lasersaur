@@ -1,6 +1,6 @@
 import cadquery as cq
 
-id = 5
+id = 5.2
 od = 10
 len = 5
 slot_w = 1
