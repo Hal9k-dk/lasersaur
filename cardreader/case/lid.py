@@ -52,9 +52,9 @@ def pcb_sup(w, l):
     s4 = translate([w/2, l/2, 0])(mirror([1, 0, 0])(rotate([0, 0, 270])(post())))
     return s1+s2+s3+s4
 
-def side():
+def side(th):
     h = case_h-(case_th+epsilon)*2
-    return translate([0, -h/2, case_th-epsilon])(cube([2, h, ring_h + 10]))
+    return translate([0, -h/2, case_th-epsilon])(cube([th, h, ring_h + 10]))
 
 def ring():
     w = case_w
@@ -63,8 +63,13 @@ def ring():
     h2 = h - case_th*2
     return translate([-w/2, -h/2, 0])(cube([w, h, ring_h])) - translate([-w2/2, -h2/2, -1])(cube([w2, h2, ring_h + 2]))
 
-def screw_hole():
-    return up(ring_h + 6.5)(left(5)(rotate([90, 0, 90])(cylinder(r=1, h = 10))))
+def screw_hole(invert):
+    th = 1
+    offset = 0
+    if invert:
+        offset = 14
+    return up(ring_h + 6.5)(left(10)(rotate([90, 0, 90])(cylinder(d=3.2, h = 20) +
+                                                         translate([0, 0, offset])(cylinder(d=4.9, h = 5)))))
 
 def usb_hole():
     return translate([-35, -18.8, 3+epsilon])(cube([15, 12, 10]))
@@ -74,14 +79,15 @@ def assembly():
     lb = up(case_th)(lid_bottom())
     rfs = rotate([0, 0, 90])(translate([case_w/4-2, 0, case_th*2-1])(rfid_sups()))
     r4s = rotate([0, 0, 90])(translate([-case_w/4+2, 0, case_th*2-1])(ardu_sups()))
-    s1 = translate([-case_w/2+case_th+epsilon/2, 0, 0])(side())
-    s2 = translate([case_w/2-case_th-epsilon/2-2, 0, 0])(side())
+    side_th = 5
+    s1 = translate([-case_w/2+case_th+epsilon/2, 0, 0])(side(side_th))
+    s2 = translate([case_w/2-case_th-epsilon/2-side_th, 0, 0])(side(side_th))
 
     sh_dist = 59
-    sh1 = translate([-sh_dist/2, -15, 0])(screw_hole())
-    sh2 = translate([-sh_dist/2, 15, 0])(screw_hole())
-    sh3 = translate([sh_dist/2, -15, 0])(screw_hole())
-    sh4 = translate([sh_dist/2, 15, 0])(screw_hole())
+    sh1 = translate([-sh_dist/2, -15, 0])(screw_hole(True))
+    sh2 = translate([-sh_dist/2, 15, 0])(screw_hole(True))
+    sh3 = translate([sh_dist/2, -15, 0])(screw_hole(False))
+    sh4 = translate([sh_dist/2, 15, 0])(screw_hole(False))
     return lt+lb+rfs+r4s+s1+s2+ring() - (sh1 + sh2 + sh3 + sh4) - usb_hole()
 
 if __name__ == '__main__':

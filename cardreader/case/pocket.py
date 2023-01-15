@@ -78,6 +78,14 @@ def card_cover():
 
     return hull()(left_c+right_c+left_s+right_s) + brim
 
+def screw_hole(invert):
+    cone = cylinder(r1=1.6, r2=3, h=2.3)
+    offset = 10
+    if invert:
+        cone = rotate([180, 0, 0])(cone)
+        offset = 0
+    return left(5)(rotate([90, 0, 90])(cylinder(r=1.6, h = 10) + translate([0, 0, offset])(cone)))
+
 def assembly():
     fh1 = fob_hole()
     fh2 = translate([0, fob_pocket_displacement, 0])(fh1)
@@ -86,7 +94,17 @@ def assembly():
     cp = card_pocket()
     cc = card_cover()
 
-    return cc-fh-cp-fc
+    sh_x = 26
+    sh_dist = 35
+    sh_offset = 25
+    sh_z = -5
+    sh1 = translate([-sh_x, sh_offset - sh_dist/2, sh_z])(screw_hole(True))
+    sh2 = translate([-sh_x, sh_offset + sh_dist/2, sh_z])(screw_hole(True))
+    sh3 = translate([sh_x, sh_offset - sh_dist/2, sh_z])(screw_hole(False))
+    sh4 = translate([sh_x, sh_offset + sh_dist/2, sh_z])(screw_hole(False))
+    screwholes = sh1 + sh2 + sh3 + sh4
+    
+    return cc-fh-cp-fc - screwholes
 
 if __name__ == '__main__':
     a = assembly()
