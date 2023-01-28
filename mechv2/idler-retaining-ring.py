@@ -2,7 +2,7 @@ import cadquery as cq
 
 id = 5.2
 od = 10
-len = 5
+len = 4
 slot_w = 1
 slot_l = 8
 
