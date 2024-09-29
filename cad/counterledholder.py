@@ -1,17 +1,22 @@
 import cadquery as cq
 
-hd = 5.1
+hd = 5.2
 cc = 10.668
-depth = 5
+depth = 8+5
 th = 1
 
 result = (cq.Workplane("XY")
           .tag("o")
           .box(cc + hd + 2*th, depth, hd + 2*th)
-          .workplaneFromTagged("o")
-          .transformed(rotate=(90, 0, 0))
+          .faces(">Y")
+          .workplane()
+          .tag("top")
           .rarray(cc, 1, 2, 1)
           .circle(hd/2)
+          .cutBlind(-8)
+          .workplaneFromTagged("top")
+          .rarray(cc, 1, 2, 1)
+          .circle(2.8/2)
           .cutThruAll()
           .edges(">Z and |Y")
           .fillet(3)
