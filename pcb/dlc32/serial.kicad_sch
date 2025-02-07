@@ -2249,7 +2249,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100u"
+		(property "Value" "22u"
 			(at 160.655 63.5 0)
 			(effects
 				(font
@@ -2258,7 +2258,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:CP_Elec_10x10"
+		(property "Footprint" ""
 			(at 160.9852 64.77 0)
 			(effects
 				(font
@@ -2317,7 +2317,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100u"
+		(property "Value" "22u"
 			(at 189.865 63.5 0)
 			(effects
 				(font
@@ -2326,7 +2326,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:CP_Elec_10x10"
+		(property "Footprint" ""
 			(at 190.1952 64.77 0)
 			(effects
 				(font
@@ -2377,7 +2377,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000058f4b807")
-		(property "Reference" "J14"
+		(property "Reference" "J9"
 			(at 101.6 31.75 0)
 			(effects
 				(font
@@ -2428,7 +2428,7 @@
 		(instances
 			(project ""
 				(path "/fc0b2ef6-7d8e-4322-8468-8fac0c3c3d07/00000000-0000-0000-0000-000058f3b713"
-					(reference "J14")
+					(reference "J9")
 					(unit 1)
 				)
 			)
@@ -2574,7 +2574,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000058f4ba43")
-		(property "Reference" "J11"
+		(property "Reference" "J10"
 			(at 38.1 31.75 0)
 			(effects
 				(font
@@ -2625,7 +2625,7 @@
 		(instances
 			(project ""
 				(path "/fc0b2ef6-7d8e-4322-8468-8fac0c3c3d07/00000000-0000-0000-0000-000058f3b713"
-					(reference "J11")
+					(reference "J10")
 					(unit 1)
 				)
 			)
@@ -2705,7 +2705,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000058f4bdb9")
-		(property "Reference" "C10"
+		(property "Reference" "C6"
 			(at 55.245 38.1 0)
 			(effects
 				(font
@@ -2759,7 +2759,7 @@
 		(instances
 			(project ""
 				(path "/fc0b2ef6-7d8e-4322-8468-8fac0c3c3d07/00000000-0000-0000-0000-000058f3b713"
-					(reference "C10")
+					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -2774,7 +2774,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-000058f4bf09")
-		(property "Reference" "J13"
+		(property "Reference" "J6"
 			(at 195.58 107.95 0)
 			(effects
 				(font
@@ -2825,7 +2825,7 @@
 		(instances
 			(project ""
 				(path "/fc0b2ef6-7d8e-4322-8468-8fac0c3c3d07/00000000-0000-0000-0000-000058f3b713"
-					(reference "J13")
+					(reference "J6")
 					(unit 1)
 				)
 			)
@@ -3329,7 +3329,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005c57ef6d")
-		(property "Reference" "J15"
+		(property "Reference" "J4"
 			(at 223.012 105.6132 0)
 			(effects
 				(font
@@ -3382,7 +3382,7 @@
 		(instances
 			(project ""
 				(path "/fc0b2ef6-7d8e-4322-8468-8fac0c3c3d07/00000000-0000-0000-0000-000058f3b713"
-					(reference "J15")
+					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -3397,7 +3397,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "00000000-0000-0000-0000-00005c57efec")
-		(property "Reference" "J16"
+		(property "Reference" "J5"
 			(at 222.9866 117.0432 0)
 			(effects
 				(font
@@ -3450,7 +3450,7 @@
 		(instances
 			(project ""
 				(path "/fc0b2ef6-7d8e-4322-8468-8fac0c3c3d07/00000000-0000-0000-0000-000058f3b713"
-					(reference "J16")
+					(reference "J5")
 					(unit 1)
 				)
 			)
