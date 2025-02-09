@@ -2258,7 +2258,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B"
 			(at 160.9852 64.77 0)
 			(effects
 				(font
@@ -2326,7 +2326,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B"
 			(at 190.1952 64.77 0)
 			(effects
 				(font
