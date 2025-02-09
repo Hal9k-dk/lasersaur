@@ -73,22 +73,6 @@
        orient="auto"
        refY="0"
        refX="0"
-       id="marker27661"
-       style="overflow:visible"
-       inkscape:isstock="true"
-       inkscape:collect="always">
-      <path
-         id="path27663"
-         d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
-         style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;stroke-opacity:1"
-         transform="matrix(-0.8,0,0,-0.8,-10,0)"
-         inkscape:connector-curvature="0" />
-    </marker>
-    <marker
-       inkscape:stockid="Arrow1Lend"
-       orient="auto"
-       refY="0"
-       refX="0"
        id="marker24621"
        style="overflow:visible"
        inkscape:isstock="true"
@@ -188,7 +172,11 @@
        refX="0"
        id="marker17585"
        style="overflow:visible"
-       inkscape:isstock="true">
+       inkscape:isstock="true"
+       viewBox="0 0 8.88692697 5.07824398"
+       markerWidth="8.88692697"
+       markerHeight="5.07824398"
+       preserveAspectRatio="xMidYMid">
       <path
          id="path17587"
          d="M 0,0 5,-5 -12.5,0 5,5 0,0 Z"
@@ -1321,11 +1309,6 @@
        id="path24613"
        inkscape:connector-curvature="0" />
     <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.996686px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker27661)"
-       d="M 754.42913,379.13384 V 519.92817"
-       id="path28731"
-       inkscape:connector-curvature="0" />
-    <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker28761)"
        d="m 1098.4252,556.29919 -106.29922,0 0,-70.86614"
        id="path28753"
@@ -1344,34 +1327,6 @@
        style="fill:none;fill-rule:evenodd;stroke:#ff0000;stroke-width:1.77165;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
        d="M 107.42871,439.81999 H 249.161"
        id="path1"
-       inkscape:connector-curvature="0" />
-    <rect
-       style="fill:none;stroke:#000000;stroke-width:1.65351;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect1"
-       width="140.83241"
-       height="71.546707"
-       x="725.27216"
-       y="521.78406" />
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="796.23975"
-       y="554.84222"
-       id="text2"><tspan
-         sodipodi:role="line"
-         id="tspan1"
-         x="796.23975"
-         y="554.84222"
-         style="font-size:15px;line-height:1.25">Exhaust</tspan><tspan
-         sodipodi:role="line"
-         x="796.23975"
-         y="573.59222"
-         id="tspan2"
-         style="font-size:15px;line-height:1.25">logic</tspan></text>
-    <path
-       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.791262px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#marker4762-2)"
-       d="M 723.98959,557.6903 H 679.62061"
-       id="path2"
        inkscape:connector-curvature="0" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#0000ff;stroke-width:0.991423;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker7847)"
@@ -1533,5 +1488,24 @@
          style="fill:#0000ff;fill-opacity:1;stroke-width:3.1451"
          x="1034.198"
          y="105.14571">Supply, LV</tspan></text>
+    <path
+       style="fill:none;stroke-width:1.77165356;stroke:#000000;stroke-opacity:1;stroke-dasharray:none;marker-start:url(#marker17585)"
+       d="m 679.31215,557.61281 h 63.78078 V 436.38244 H 885.8962"
+       id="path3" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 816.125,421.48721 16.25,-16.25"
+       id="path4"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 750.5,177.73721 16.25,-16.25"
+       id="path7"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 600.5,177.73721 16.25,-16.25"
+       id="path15"
+       inkscape:connector-curvature="0" />
   </g>
 </svg>
