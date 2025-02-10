@@ -424,8 +424,8 @@
       "duplicate_sheet_names": "error",
       "endpoint_off_grid": "warning",
       "extra_units": "error",
-      "footprint_filter": "ignore",
-      "footprint_link_issues": "warning",
+      "footprint_filter": "error",
+      "footprint_link_issues": "ignore",
       "four_way_junction": "ignore",
       "global_label_dangling": "error",
       "hier_label_mismatch": "error",
@@ -675,7 +675,7 @@
     ],
     [
       "00000000-0000-0000-0000-000058f3b713",
-      "Serial"
+      "Sheet2"
     ]
   ],
   "text_variables": {}

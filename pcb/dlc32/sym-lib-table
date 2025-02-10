@@ -7,4 +7,5 @@
   (lib (name "Transistor_FET")(type "KiCad")(uri "${KIPRJMOD}/libs/Transistor_FET.kicad_sym")(options "")(descr ""))
   (lib (name "74xx")(type "KiCad")(uri "${KIPRJMOD}/libs/74xx.kicad_sym")(options "")(descr ""))
   (lib (name "Mechanical")(type "KiCad")(uri "${KIPRJMOD}/libs/Mechanical.kicad_sym")(options "")(descr ""))
+  (lib (name "g6b-1114c-us-dc5")(type "Legacy")(uri "${KIPRJMOD}/libs/g6b-1114c-us-dc5.lib")(options "")(descr ""))
 )
