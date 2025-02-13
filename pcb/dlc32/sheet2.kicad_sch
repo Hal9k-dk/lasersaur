@@ -5705,21 +5705,20 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "34e8e607-8e26-4071-94e4-a6aa4916f350")
-		(property "Reference" "J18"
-			(at 137.922 81.28 0)
+		(property "Reference" "J7"
+			(at 138.938 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "Conn_01x02"
-			(at 142.24 76.2 0)
+		(property "Value" "5V PWR"
+			(at 136.906 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
@@ -5758,7 +5757,7 @@
 		(instances
 			(project ""
 				(path "/fc0b2ef6-7d8e-4322-8468-8fac0c3c3d07/00000000-0000-0000-0000-000058f3b713"
-					(reference "J18")
+					(reference "J7")
 					(unit 1)
 				)
 			)
@@ -5773,17 +5772,16 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "35b25072-7bb0-41ea-890d-182813973781")
 		(property "Reference" "J16"
-			(at 204.47 123.19 0)
+			(at 204.47 123.444 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "Conn_01x03"
+		(property "Value" "DLC32:J18"
 			(at 204.47 125.73 0)
 			(effects
 				(font
@@ -6124,7 +6122,7 @@
 		(fields_autoplaced yes)
 		(uuid "4119873a-7adb-4c13-97f4-ccc83ffd691f")
 		(property "Reference" "J15"
-			(at 151.13 129.5399 0)
+			(at 151.13 130.8099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6132,7 +6130,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Conn_01x05"
+		(property "Value" "COM2"
 			(at 151.13 132.0799 0)
 			(effects
 				(font
@@ -6204,14 +6202,14 @@
 		(fields_autoplaced yes)
 		(uuid "4cd2ac44-62d3-48f6-9770-a6a746231174")
 		(property "Reference" "J14"
-			(at 160.02 91.44 0)
+			(at 160.02 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "Conn_02x05_Odd_Even"
+		(property "Value" "EXT1"
 			(at 160.02 93.98 0)
 			(effects
 				(font
@@ -6636,7 +6634,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Conn_01x02"
+		(property "Value" "EXHAUST"
 			(at 219.202 53.3146 0)
 			(effects
 				(font
@@ -7246,20 +7244,19 @@
 		(dnp no)
 		(uuid "ee440466-afae-4f7d-83a5-40001ea0ec18")
 		(property "Reference" "J17"
-			(at 138.176 92.456 0)
+			(at 138.43 91.186 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "Conn_01x02"
-			(at 142.24 87.63 0)
+		(property "Value" "EXT PWR"
+			(at 136.652 93.726 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
