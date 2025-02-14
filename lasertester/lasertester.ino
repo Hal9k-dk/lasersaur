@@ -1,6 +1,7 @@
 const int H_PIN = 3; // PWM support
 const int L_PIN = 2;
 const int WP_PIN = 1;
+const int STEP = 5;
 
 void setup()
 {
@@ -16,46 +17,15 @@ void setup()
     digitalWrite(WP_PIN, 0);
 }
 
-int get_int(const char* buffer, int len, int* next = nullptr)
-{
-    int index = 0;
-    while (buffer[index] && isspace(buffer[index]) && len)
-    {
-        ++index;
-        --len;
-    }
-    while (buffer[index] && !isspace(buffer[index]) && len)
-    {
-        ++index;
-        --len;
-    }
-    const int BS = 30;
-    if (index >= BS)
-    {
-        Serial.println("ERROR: Integer too long");
-        return -1;
-    }
-    char intbuf[BS];
-    memcpy(intbuf, buffer, index);
-    intbuf[index] = 0;
-    if (next)
-        *next = index+1;
-    return atoi(intbuf);
-}
-
-int index = 0;
-const int BUF_SIZE = 200;
-char buffer[BUF_SIZE];
-
 int l_state = 1;
 int h_state = 0;
 int wp_state = 0;
 int pwm_on = 0;
 int pwm_value = 0;
 
-void process(const char* buffer)
+void process(char c)
 {
-    switch (buffer[0])
+    switch (c)
     {
     case 'l':
     case 'L':
@@ -92,28 +62,31 @@ void process(const char* buffer)
         break;
 
     case '+':
-        if (pwm_value < 255)
-            ++pwm_value;
+        pwm_value += STEP;
+        if (pwm_value >= 255)
+            pwm_value = 255;
         analogWrite(H_PIN, pwm_value);
         Serial.print("PWM set to ");
         Serial.println(pwm_value);
         break;
 
     case '-':
-        if (pwm_value >= 0)
-            --pwm_value;
+        pwm_value -= STEP;
+        if (pwm_value < 0)
+            pwm_value = 0;
         analogWrite(H_PIN, pwm_value);
         Serial.print("PWM set to ");
         Serial.println(pwm_value);
         break;
 
-    case 'h':
-    case 'H':
+    case '?':
         Serial.println("Commands:\r\n"
-                       "p <idx>\t\t"            "Play sound\r\n"
-                       "v <vol>\t\t"            "Set volume\r\n"
-                       "o <idx> <val>\t"        "Set PWM output\r\n"
-                       "s\t\t"                    "Stop sound");
+                       "l\t\t"            "Toggle L\r\n"
+                       "h\t\t"            "Toggle H\r\n"
+                       "w\t\t"            "Toggle WP\r\n"
+                       "p\t"              "Toggle PWM on H\r\n"
+                       "+\t\t"            "Increase PWM value\r\n"
+                       "-\t\t"            "Decrease PWM value");
         break;
         
     default:
@@ -128,22 +101,7 @@ void loop()
     {
        // Command from PC
        char c = Serial.read();
-       if ((c == '\r') || (c == '\n'))
-       {
-           buffer[index] = 0;
-           index = 0;
-           process(buffer);
-       }
-       else
-       {
-           if (index >= BUF_SIZE)
-           {
-               Serial.println("Error: Line too long");
-               index = 0;
-               return;
-           }
-           buffer[index++] = c;
-       }
+       process(c);
     }
     
     delay(10);
