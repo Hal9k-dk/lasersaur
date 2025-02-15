@@ -1,12 +1,12 @@
 const int H_PIN = 3; // PWM support
-const int L_PIN = 2;
-const int WP_PIN = 1;
+const int L_PIN = 4;
+const int WP_PIN = 5;
 const int STEP = 5;
 
 void setup()
 {
     Serial.begin(115200);
-    Serial.println("LaserTester v 0.1");
+    Serial.println("LaserTester v 0.2");
 
     pinMode(H_PIN, OUTPUT);
     pinMode(L_PIN, OUTPUT);
@@ -81,12 +81,12 @@ void process(char c)
 
     case '?':
         Serial.println("Commands:\r\n"
-                       "l\t\t"            "Toggle L\r\n"
-                       "h\t\t"            "Toggle H\r\n"
-                       "w\t\t"            "Toggle WP\r\n"
-                       "p\t"              "Toggle PWM on H\r\n"
-                       "+\t\t"            "Increase PWM value\r\n"
-                       "-\t\t"            "Decrease PWM value");
+                       "l\t"            "Toggle L\r\n"
+                       "h\t"            "Toggle H\r\n"
+                       "w\t"            "Toggle WP\r\n"
+                       "p\t"            "Toggle PWM on H\r\n"
+                       "+\t"            "Increase PWM value\r\n"
+                       "-\t"            "Decrease PWM value");
         break;
         
     default:
