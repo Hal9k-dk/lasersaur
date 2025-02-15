@@ -5359,7 +5359,7 @@
 	(symbol
 		(lib_id "74xx:74LS08")
 		(at 189.23 85.09 0)
-		(unit 1)
+		(unit 4)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -5454,7 +5454,7 @@
 			(project ""
 				(path "/fc0b2ef6-7d8e-4322-8468-8fac0c3c3d07"
 					(reference "IC1")
-					(unit 1)
+					(unit 4)
 				)
 			)
 		)
@@ -7755,7 +7755,7 @@
 	(symbol
 		(lib_id "74xx:74LS08")
 		(at 157.48 87.63 0)
-		(unit 4)
+		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -7850,7 +7850,7 @@
 			(project "dlc32"
 				(path "/fc0b2ef6-7d8e-4322-8468-8fac0c3c3d07"
 					(reference "IC1")
-					(unit 4)
+					(unit 1)
 				)
 			)
 		)
