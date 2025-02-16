@@ -8401,7 +8401,7 @@
 				)
 			)
 		)
-		(property "Value" "LED"
+		(property "Value" "CHILLER OK"
 			(at 112.0775 62.23 0)
 			(effects
 				(font

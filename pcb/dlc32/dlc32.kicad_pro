@@ -57,6 +57,18 @@
         [
           "lib_footprint_mismatch|80836000|54555500|393c812c-05b1-4b06-949e-541139397c3f|00000000-0000-0000-0000-000000000000",
           ""
+        ],
+        [
+          "starved_thermal|138006000|62738000|860cc619-c6df-4ccd-85f9-9f6ec502aa7d|8d6f2852-3c0a-4882-952c-669d700a8fa9|F.Cu",
+          ""
+        ],
+        [
+          "starved_thermal|153513000|26990000|860cc619-c6df-4ccd-85f9-9f6ec502aa7d|d2f762de-d826-4e70-b800-2da2a65e4468|F.Cu",
+          ""
+        ],
+        [
+          "starved_thermal|97136000|33631000|860cc619-c6df-4ccd-85f9-9f6ec502aa7d|62a5d3ac-40bb-42c8-b24d-cb32170ab986|F.Cu",
+          ""
         ]
       ],
       "meta": {
