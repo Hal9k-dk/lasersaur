@@ -3,7 +3,7 @@ from build123d import *
 from ocp_vscode import *
 
 # LED holes
-led_dia = 5.1
+led_dia = 5.05
 led_cc = 8.47
 led_depth = 7.5
 led_offset = -3
@@ -55,13 +55,18 @@ with BuildPart() as ex11:
             (hole_cc/2 + hole_x_offset, hole_y_offset)]):
             Circle(radius=hole_dia/2)
     extrude(amount=-50, mode=Mode.SUBTRACT)
-    # cutout
+    # cutout 1
     with BuildSketch(ex11.faces().sort_by(Axis.Z)[-1]) as ex11_sk:
         with Locations([(19, 4.5)]):
             RectangleRounded(10, 10, 1)
     extrude(amount=-50, mode=Mode.SUBTRACT)
     # fillet
     fillet(ex11.edges().filter_by(Axis.Z), radius=1)
+    # cutout 2
+    with BuildSketch(ex11.faces().sort_by(Axis.Z)[-1]) as ex11_sk:
+        with Locations([(-1.6, 3)]):
+            RectangleRounded(3, 8, 0.25)
+    extrude(amount=-2, mode=Mode.SUBTRACT)
 
 show(ex11)    
 export_stl(ex11.part, "dlc32.stl")
