@@ -63,8 +63,8 @@ with BuildPart() as ex11:
     # fillet
     fillet(ex11.edges().filter_by(Axis.Z), radius=1)
     # cutout 2
-    with BuildSketch(ex11.faces().sort_by(Axis.Z)[-1]) as ex11_sk:
-        with Locations([(-1.6, 3)]):
+    with BuildSketch(ex11.faces().sort_by(Axis.Z)[0]) as ex11_sk:
+        with Locations([(-1.6, -5)]):
             RectangleRounded(3, 8, 0.25)
     extrude(amount=-2, mode=Mode.SUBTRACT)
 
