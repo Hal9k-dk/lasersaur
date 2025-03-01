@@ -3,9 +3,9 @@ from build123d import *
 from ocp_vscode import *
 
 # LED holes
-led_dia = 5.2
+led_dia = 5.1
 led_cc = 8.47
-led_depth = 8
+led_depth = 7.5
 led_offset = -3
 fiber_dia = 2.8
 # Screw holes
@@ -57,7 +57,7 @@ with BuildPart() as ex11:
     extrude(amount=-50, mode=Mode.SUBTRACT)
     # cutout
     with BuildSketch(ex11.faces().sort_by(Axis.Z)[-1]) as ex11_sk:
-        with Locations([(18, 4)]):
+        with Locations([(19, 4.5)]):
             RectangleRounded(10, 10, 1)
     extrude(amount=-50, mode=Mode.SUBTRACT)
     # fillet
