@@ -65,10 +65,6 @@
         [
           "starved_thermal|153513000|26990000|860cc619-c6df-4ccd-85f9-9f6ec502aa7d|d2f762de-d826-4e70-b800-2da2a65e4468|F.Cu",
           ""
-        ],
-        [
-          "starved_thermal|97136000|33631000|860cc619-c6df-4ccd-85f9-9f6ec502aa7d|62a5d3ac-40bb-42c8-b24d-cb32170ab986|F.Cu",
-          ""
         ]
       ],
       "meta": {
@@ -106,13 +102,13 @@
         "malformed_courtyard": "error",
         "microvia_drill_out_of_range": "error",
         "mirrored_text_on_front_layer": "warning",
-        "missing_courtyard": "ignore",
+        "missing_courtyard": "error",
         "missing_footprint": "warning",
         "net_conflict": "warning",
         "nonmirrored_text_on_back_layer": "warning",
-        "npth_inside_courtyard": "ignore",
+        "npth_inside_courtyard": "error",
         "padstack": "error",
-        "pth_inside_courtyard": "ignore",
+        "pth_inside_courtyard": "error",
         "shorting_items": "error",
         "silk_edge_clearance": "warning",
         "silk_over_copper": "error",
