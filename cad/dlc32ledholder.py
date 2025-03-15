@@ -7,7 +7,7 @@ led_dia = 5.2
 led_cc = 8.47
 led_depth = 8
 led_offset = 0
-fiber_dia = 2.8
+fiber_dia = 1.9
 # Screw holes
 hole_cc = 58.7 - 33.2486
 hole_dia = 3.2
