@@ -7338,7 +7338,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "PCM_Capacitor_SMD_AKL:CP_Elec_10x10"
+		(property "Footprint" "PCM_Capacitor_Tantalum_SMD_AKL:CP_EIA-7343-15_Kemet-W"
 			(at 139.3952 62.23 0)
 			(effects
 				(font
