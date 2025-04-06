@@ -3215,16 +3215,6 @@
 		)
 		(uuid "3b599ece-7526-4ff3-8d11-07f21569998e")
 	)
-	(text "IO27"
-		(exclude_from_sim no)
-		(at 129.032 105.664 0)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-		)
-		(uuid "46d01f2f-2ebb-402c-80d2-4a717700c99e")
-	)
 	(text "IO33"
 		(exclude_from_sim no)
 		(at 137.16 100.584 0)
@@ -3382,6 +3372,10 @@
 	(no_connect
 		(at 153.67 102.87)
 		(uuid "6c981a40-402f-4dcc-937d-85cd6a1f779d")
+	)
+	(no_connect
+		(at 153.67 105.41)
+		(uuid "b6c36b21-2e26-4938-95d5-82a8955b3601")
 	)
 	(no_connect
 		(at 209.55 132.08)
@@ -3854,16 +3848,6 @@
 			(type solid)
 		)
 		(uuid "7d1507c7-6273-4c58-873f-4100203e0a08")
-	)
-	(wire
-		(pts
-			(xy 146.05 105.41) (xy 153.67 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "87b1478a-f7a4-42c4-8c43-74cb86607f7b")
 	)
 	(wire
 		(pts
@@ -4365,28 +4349,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "LASER_EN"
-		(shape input)
-		(at 146.05 105.41 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.524 1.524)
-			)
-			(justify right)
-		)
-		(uuid "5220e8bc-46b6-4a34-bebe-a6f68c860293")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 131.3231 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 				(hide yes)
 			)
 		)
