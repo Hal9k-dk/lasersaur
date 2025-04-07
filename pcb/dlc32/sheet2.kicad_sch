@@ -3358,10 +3358,6 @@
 		(uuid "e1ae6ad1-d5b6-4d06-80c5-64f07485442a")
 	)
 	(no_connect
-		(at 209.55 134.62)
-		(uuid "0a19c72f-838b-40e5-b3fa-5e57322649ed")
-	)
-	(no_connect
 		(at 153.67 107.95)
 		(uuid "20f8afa4-8e90-461e-9ef6-fc38b978b10d")
 	)
@@ -3372,6 +3368,14 @@
 	(no_connect
 		(at 153.67 102.87)
 		(uuid "6c981a40-402f-4dcc-937d-85cd6a1f779d")
+	)
+	(no_connect
+		(at 234.95 148.59)
+		(uuid "abcbe7a9-f466-4fd9-b112-e51bd77bef0f")
+	)
+	(no_connect
+		(at 209.55 129.54)
+		(uuid "b59796af-efd7-4894-8f23-c946d2ddbb2b")
 	)
 	(no_connect
 		(at 153.67 105.41)
@@ -3941,16 +3945,6 @@
 	)
 	(wire
 		(pts
-			(xy 209.55 129.54) (xy 215.9 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a47fa5cc-fcc4-45de-8a0f-ed91346dc975")
-	)
-	(wire
-		(pts
 			(xy 140.97 128.27) (xy 143.51 128.27)
 		)
 		(stroke
@@ -4078,6 +4072,16 @@
 			(type solid)
 		)
 		(uuid "c7d842a2-a8d1-4f55-b23a-3bd5550d247d")
+	)
+	(wire
+		(pts
+			(xy 209.55 134.62) (xy 215.9 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9677fa5-d599-4c67-886f-eecf1849d51d")
 	)
 	(wire
 		(pts
@@ -4355,7 +4359,7 @@
 	)
 	(global_label "LASER_PWM"
 		(shape input)
-		(at 215.9 129.54 0)
+		(at 215.9 134.62 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4365,7 +4369,7 @@
 		)
 		(uuid "527a46d9-7e8d-4710-b19b-9db4cdc2a050")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 232.6588 129.54 0)
+			(at 232.6588 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
