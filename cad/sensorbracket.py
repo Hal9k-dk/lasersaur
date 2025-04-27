@@ -2,7 +2,7 @@
 from build123d import *
 from ocp_vscode import *
 
-length, height, width = 15, 15, 40
+length, height, width = 25, 22, 40
 bend_radius = 1
 thickness = 3
 
@@ -24,12 +24,12 @@ with BuildPart() as bracket:
     extrude(amount = 2)
     # side screw hole
     with BuildSketch(bracket.faces().sort_by(Axis.Y)[-1]) as h_sk:
-        with Locations([(height/2, 10)]):
+        with Locations([(15, -10)]):
             Circle(radius=5.2/2)
     extrude(amount=-50, mode=Mode.SUBTRACT)
-    # side screw hole
+    # bottom screw hole
     with BuildSketch(bracket.faces().sort_by(Axis.X)[0]) as h_sk:
-        with Locations([(length/2, 10)]):
+        with Locations([(length/2+2.5, 4)]):
             Circle(radius=3.2/2)
     extrude(amount=-50, mode=Mode.SUBTRACT)
 
