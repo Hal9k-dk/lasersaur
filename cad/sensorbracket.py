@@ -21,7 +21,7 @@ with BuildPart() as bracket:
     with BuildSketch(bracket.faces().sort_by(Axis.Y)[0]) as h_sk:
         with GridLocations(1, 20, 1, 2):
             Rectangle(length - 5, 5)
-    extrude(amount = 2)
+    extrude(amount = 1)
     # side screw hole
     with BuildSketch(bracket.faces().sort_by(Axis.Y)[-1]) as h_sk:
         with Locations([(15, -10)]):
