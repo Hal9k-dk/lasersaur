@@ -8757,7 +8757,7 @@
 		)
 	)
 	(sheet
-		(at 124.46 176.53)
+		(at 124.46 161.29)
 		(size 40.64 11.43)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8772,18 +8772,17 @@
 			(color 0 0 0 0.0000)
 		)
 		(uuid "00000000-0000-0000-0000-000058f3b713")
-		(property "Sheetname" "Sheet2"
-			(at 124.46 175.7675 0)
+		(property "Sheetname" "Sheet 2"
+			(at 124.46 160.5275 0)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
 				(justify left bottom)
-				(hide yes)
 			)
 		)
 		(property "Sheetfile" "sheet2.kicad_sch"
-			(at 124.46 188.5701 0)
+			(at 124.46 173.3301 0)
 			(effects
 				(font
 					(size 1.524 1.524)
@@ -8795,6 +8794,48 @@
 			(project "dlc32"
 				(path "/fc0b2ef6-7d8e-4322-8468-8fac0c3c3d07"
 					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 124.46 179.07)
+		(size 40.64 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "3a947436-e170-4ac3-bac9-484c31c4d6de")
+		(property "Sheetname" "Sheet 3"
+			(at 124.46 178.3584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "sheet3.kicad_sch"
+			(at 124.46 192.3546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "dlc32"
+				(path "/fc0b2ef6-7d8e-4322-8468-8fac0c3c3d07"
+					(page "3")
 				)
 			)
 		)
