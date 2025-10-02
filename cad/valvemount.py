@@ -1,6 +1,5 @@
 from build123d import *
 from ocp_vscode import *
-from defs import *
 
 th = 3
 height = 15
@@ -37,6 +36,11 @@ with BuildPart() as p:
         with Locations((0, th + valve_h + valve_dia/2)):
             Circle(valve_dia/2)
     extrude(amount=-depth, mode=Mode.SUBTRACT)
+    # cable tie hole
+    with BuildSketch(p.faces().sort_by(Axis.X)[-1]) as sk:
+        with Locations((10, th+1)):
+            RectangleRounded(5, 3, 1)
+    extrude(amount=-width, mode=Mode.SUBTRACT)
     
 show(p)
 
